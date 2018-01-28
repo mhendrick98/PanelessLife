@@ -12,11 +12,11 @@ import HotKey
 class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelegate, PopupViewControllerDelegate {
     
     func initContents(){
-        contents.append(("Test", "IMG_3136", hkScreen1, "HotKey = Command + Option + 1"))
-        contents.append(("Hello", "slider-turtle", hkScreen2, "HotKey = Command + Option + 2"))
-        contents.append(("World", "slider-turtle", hkScreen3, "HotKey = Command + Option + 3"))
+        contents.append(("Test", "IMG_3136", hkScreen1, "HotKey = Command + Option + 1", "leScript"))
+        contents.append(("Hello", "slider-turtle", hkScreen2, "HotKey = Command + Option + 2", "leScript"))
+        contents.append(("World", "slider-turtle", hkScreen3, "HotKey = Command + Option + 3", "leScript"))
     }
-    var contents: [(String, String, HotKey, String)] = []
+    var contents: [(String, String, HotKey, String, String)] = []
     
     let hkScreen1 = HotKey(key: .one, modifiers: [.command, .option])
     let hkScreen2 = HotKey(key: .two, modifiers: [.command, .option])
@@ -30,21 +30,22 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
     var addedName: String = ""
     
     
-    func createNewContent(name: String){
+    func createNewContent(name: String, script: String){
+        var script = ""
         if contents.count == 0{
-            contents.append((name, "IMG_3136", hkScreen1, "HotKey = Command + Option + 1"))
+            contents.append((name, "IMG_3136", hkScreen1, "HotKey = Command + Option + 1", script))
         }
         else if contents.count == 1{
             contents[0].2 = hkScreen1
             contents[0].3 = "HotKey = Command + Option + 1"
-            contents.append((name, "slider-turtle", hkScreen2, "HotKey = Command + Option + 2"))
+            contents.append((name, "slider-turtle", hkScreen2, "HotKey = Command + Option + 2", script))
         }
         else if contents.count == 2{
             contents[0].2 = hkScreen1
             contents[0].3 = "HotKey = Command + Option + 1"
             contents[1].2 = hkScreen2
             contents[1].3 = "HotKey = Command + Option + 2"
-            contents.append((name, "slider-turtle", hkScreen3, "HotKey = Command + Option + 3"))
+            contents.append((name, "slider-turtle", hkScreen3, "HotKey = Command + Option + 3", script))
         }
         else if contents.count == 3{
             contents[0].2 = hkScreen1
@@ -53,7 +54,7 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
             contents[1].3 = "HotKey = Command + Option + 2"
             contents[2].2 = hkScreen3
             contents[2].3 = "HotKey = Command + Option + 3"
-            contents.append((name, "slider-turtle", hkScreen4, "HotKey = Command + Option + 4"))
+            contents.append((name, "slider-turtle", hkScreen4, "HotKey = Command + Option + 4", script))
         }
         else if contents.count == 4{
             contents[0].2 = hkScreen1
@@ -64,7 +65,7 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
             contents[2].3 = "HotKey = Command + Option + 3"
             contents[3].2 = hkScreen4
             contents[3].3 = "HotKey = Command + Option + 4"
-            contents.append((name, "slider-turtle", hkScreen5, "HotKey = Command + Option + 5"))
+            contents.append((name, "slider-turtle", hkScreen5, "HotKey = Command + Option + 5", script))
         }
     }
     
@@ -83,6 +84,7 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
         //initContents()
         checkLength()
         enableWatchers()
+        self.preferredContentSize = NSMakeSize(500, 300)
         self.tableView.reloadData()
         super.viewDidLoad()
 
@@ -179,7 +181,7 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
     }
     
     func popupViewController(viewController: popUpViewController, didEnterName name: String, didRecieveImg: String) {
-        createNewContent(name: name)
+        createNewContent(name: name, script: didRecieveImg)
         checkLength()
         enableWatchers()
         self.tableView.reloadData()
