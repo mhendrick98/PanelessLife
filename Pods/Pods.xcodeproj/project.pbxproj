@@ -1,0 +1,586 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		153BB7A34EBA0E0F6CD8BD5468A99397 /* Pods-justTesting-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B5A21EDE50BC8531200C369E6FD4E5C3 /* Pods-justTesting-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		368E6EA52A08B9839793D4A9F37627E2 /* Pods-justTesting-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F417563638788E84E611A705822D991 /* Pods-justTesting-dummy.m */; };
+		376600012D78BBD1A6A1350E2C0E1763 /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D932BA03EC0EEBB5D784A0A1A430656 /* Key.swift */; };
+		401C3D04D259233BEAB50F753F44EF54 /* HotKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26934BD6BC0B65D4E808B922A0F1E543 /* HotKey.swift */; };
+		4F05668B9EB744A2EA80944CD56D6FD9 /* KeyCombo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07CFD521DA671921D73AA482491B21C /* KeyCombo.swift */; };
+		583887985D567BD5CAE358F2D637C089 /* Appkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8C035145C822CCF7AB16AB4758080D4 /* Appkit.framework */; };
+		5FDD26A50E274A822DB8D0E12F973D3E /* HotKey-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E6CBE64C502A8AA45CCE99809EEB002C /* HotKey-dummy.m */; };
+		B2B564B05E8517BC5CE69E79EB96C50B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C0C5FD3B4DBF1E42EBF1E6C1EAFD243 /* Cocoa.framework */; };
+		B401867272D84298ED1281CD038DACD2 /* HotKeysController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CAC9DABE04E0493AC7084B80B4FFEF /* HotKeysController.swift */; };
+		E0E5B9A249DABC6DC93A498FC5FB12B3 /* NSEventModifierFlags+HotKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDBFC39A102F89D13F7659FEB469FDD /* NSEventModifierFlags+HotKey.swift */; };
+		E437EFC20388DA5AAF296DF9779C9F04 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C0C5FD3B4DBF1E42EBF1E6C1EAFD243 /* Cocoa.framework */; };
+		E7E905CEE708C219A30A8B214D467482 /* HotKey-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F5E15B714AEE690F3EE615A79EB09011 /* HotKey-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FF966CE68AF05F0AD141AAA169908C85 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60EBB4C83DD47FF9510B7C7786633F64 /* Carbon.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4414AD35FDD08B267621E1DB6A08EF0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD7CA7613D1AE9B77775DCDC34F87472;
+			remoteInfo = HotKey;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		041C3806EC1C9FFCE885FC9EDD078D12 /* Pods-justTesting.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-justTesting.modulemap"; sourceTree = "<group>"; };
+		0759573E7B674B9334520C909AA90EF4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BDBE835FEF0FB44C1F4F3466A0C6234 /* HotKey.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HotKey.framework; path = HotKey.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C477D06E8966A43AD82A480A99C7314 /* HotKey.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HotKey.xcconfig; sourceTree = "<group>"; };
+		26934BD6BC0B65D4E808B922A0F1E543 /* HotKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HotKey.swift; path = Sources/HotKey/HotKey.swift; sourceTree = "<group>"; };
+		2C0C5FD3B4DBF1E42EBF1E6C1EAFD243 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		2D932BA03EC0EEBB5D784A0A1A430656 /* Key.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Key.swift; path = Sources/HotKey/Key.swift; sourceTree = "<group>"; };
+		2FB7A447F5FC6474E414CB3231016A14 /* Pods-justTesting.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-justTesting.release.xcconfig"; sourceTree = "<group>"; };
+		47298E4186CBB9ECB5F53374C1916E93 /* HotKey.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = HotKey.modulemap; sourceTree = "<group>"; };
+		47B4A203139225347191D79AC3C7AE07 /* HotKey-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HotKey-prefix.pch"; sourceTree = "<group>"; };
+		5F417563638788E84E611A705822D991 /* Pods-justTesting-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-justTesting-dummy.m"; sourceTree = "<group>"; };
+		60EBB4C83DD47FF9510B7C7786633F64 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Carbon.framework; sourceTree = DEVELOPER_DIR; };
+		619BC485D8FCEB96C32D5A89F9600B95 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78CAC9DABE04E0493AC7084B80B4FFEF /* HotKeysController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HotKeysController.swift; path = Sources/HotKey/HotKeysController.swift; sourceTree = "<group>"; };
+		82D35B14BF31175A10FEE73A39800C35 /* Pods-justTesting.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-justTesting.debug.xcconfig"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F98BBB81F1838C1D3C3DE35D2A5925F /* Pods-justTesting-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-justTesting-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AFDBFC39A102F89D13F7659FEB469FDD /* NSEventModifierFlags+HotKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSEventModifierFlags+HotKey.swift"; path = "Sources/HotKey/NSEventModifierFlags+HotKey.swift"; sourceTree = "<group>"; };
+		B5A21EDE50BC8531200C369E6FD4E5C3 /* Pods-justTesting-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-justTesting-umbrella.h"; sourceTree = "<group>"; };
+		C07CFD521DA671921D73AA482491B21C /* KeyCombo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyCombo.swift; path = Sources/HotKey/KeyCombo.swift; sourceTree = "<group>"; };
+		C368E2B9282186BDF47FAC74046395FE /* Pods-justTesting-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-justTesting-frameworks.sh"; sourceTree = "<group>"; };
+		D0A7C6E1002C4674A7676ADDAB5BF59C /* Pods-justTesting-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-justTesting-acknowledgements.plist"; sourceTree = "<group>"; };
+		E0633CFAA8DD6FC269843999155E9086 /* Pods_justTesting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_justTesting.framework; path = "Pods-justTesting.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6CBE64C502A8AA45CCE99809EEB002C /* HotKey-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HotKey-dummy.m"; sourceTree = "<group>"; };
+		F5E15B714AEE690F3EE615A79EB09011 /* HotKey-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HotKey-umbrella.h"; sourceTree = "<group>"; };
+		F8C035145C822CCF7AB16AB4758080D4 /* Appkit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Appkit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Appkit.framework; sourceTree = DEVELOPER_DIR; };
+		FB6348DEC81E6B030592F3C42D8A98FF /* Pods-justTesting-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-justTesting-resources.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		05E6B8CBBA62A425D93EAE9CC9C79F2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				583887985D567BD5CAE358F2D637C089 /* Appkit.framework in Frameworks */,
+				FF966CE68AF05F0AD141AAA169908C85 /* Carbon.framework in Frameworks */,
+				B2B564B05E8517BC5CE69E79EB96C50B /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5E90E8D3543BF717E8013E7F5F4F532 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E437EFC20388DA5AAF296DF9779C9F04 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E116347C58A0922E9CADD61E595BF01 /* HotKey */ = {
+			isa = PBXGroup;
+			children = (
+				26934BD6BC0B65D4E808B922A0F1E543 /* HotKey.swift */,
+				78CAC9DABE04E0493AC7084B80B4FFEF /* HotKeysController.swift */,
+				2D932BA03EC0EEBB5D784A0A1A430656 /* Key.swift */,
+				C07CFD521DA671921D73AA482491B21C /* KeyCombo.swift */,
+				AFDBFC39A102F89D13F7659FEB469FDD /* NSEventModifierFlags+HotKey.swift */,
+				4A7F4D7F94B962D12187A8BC45F18E28 /* Support Files */,
+			);
+			name = HotKey;
+			path = HotKey;
+			sourceTree = "<group>";
+		};
+		4A7F4D7F94B962D12187A8BC45F18E28 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				47298E4186CBB9ECB5F53374C1916E93 /* HotKey.modulemap */,
+				1C477D06E8966A43AD82A480A99C7314 /* HotKey.xcconfig */,
+				E6CBE64C502A8AA45CCE99809EEB002C /* HotKey-dummy.m */,
+				47B4A203139225347191D79AC3C7AE07 /* HotKey-prefix.pch */,
+				F5E15B714AEE690F3EE615A79EB09011 /* HotKey-umbrella.h */,
+				0759573E7B674B9334520C909AA90EF4 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/HotKey";
+			sourceTree = "<group>";
+		};
+		533D9C204CFC73347E1140FD2FD393D2 /* Pods-justTesting */ = {
+			isa = PBXGroup;
+			children = (
+				619BC485D8FCEB96C32D5A89F9600B95 /* Info.plist */,
+				041C3806EC1C9FFCE885FC9EDD078D12 /* Pods-justTesting.modulemap */,
+				9F98BBB81F1838C1D3C3DE35D2A5925F /* Pods-justTesting-acknowledgements.markdown */,
+				D0A7C6E1002C4674A7676ADDAB5BF59C /* Pods-justTesting-acknowledgements.plist */,
+				5F417563638788E84E611A705822D991 /* Pods-justTesting-dummy.m */,
+				C368E2B9282186BDF47FAC74046395FE /* Pods-justTesting-frameworks.sh */,
+				FB6348DEC81E6B030592F3C42D8A98FF /* Pods-justTesting-resources.sh */,
+				B5A21EDE50BC8531200C369E6FD4E5C3 /* Pods-justTesting-umbrella.h */,
+				82D35B14BF31175A10FEE73A39800C35 /* Pods-justTesting.debug.xcconfig */,
+				2FB7A447F5FC6474E414CB3231016A14 /* Pods-justTesting.release.xcconfig */,
+			);
+			name = "Pods-justTesting";
+			path = "Target Support Files/Pods-justTesting";
+			sourceTree = "<group>";
+		};
+		64ACD6C67B4771EEFD1C13EA25961336 /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				F8C035145C822CCF7AB16AB4758080D4 /* Appkit.framework */,
+				60EBB4C83DD47FF9510B7C7786633F64 /* Carbon.framework */,
+				2C0C5FD3B4DBF1E42EBF1E6C1EAFD243 /* Cocoa.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		77DAE2CD12D96B5E77BD77987A62C91F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0BDBE835FEF0FB44C1F4F3466A0C6234 /* HotKey.framework */,
+				E0633CFAA8DD6FC269843999155E9086 /* Pods_justTesting.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				96D996393384F21972E2DD81788EE22C /* Frameworks */,
+				95F84480F812638CE6FA53D39E7937B9 /* Pods */,
+				77DAE2CD12D96B5E77BD77987A62C91F /* Products */,
+				9F5707D7E0C94031582D44593C1DF492 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		95F84480F812638CE6FA53D39E7937B9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0E116347C58A0922E9CADD61E595BF01 /* HotKey */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		96D996393384F21972E2DD81788EE22C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				64ACD6C67B4771EEFD1C13EA25961336 /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9F5707D7E0C94031582D44593C1DF492 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				533D9C204CFC73347E1140FD2FD393D2 /* Pods-justTesting */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E1EC42C7C9D509EDDAEA9E9F3EB60EE0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7E905CEE708C219A30A8B214D467482 /* HotKey-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2D94D6F571DB6FDF86BE9E8DE608B74 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				153BB7A34EBA0E0F6CD8BD5468A99397 /* Pods-justTesting-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		63663AE86E055B45F23981602C2D8E06 /* Pods-justTesting */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 456348DBECB3AE0CB0728D5DD0EA8745 /* Build configuration list for PBXNativeTarget "Pods-justTesting" */;
+			buildPhases = (
+				B516688622ABA67F80FD07019491F96A /* Sources */,
+				A5E90E8D3543BF717E8013E7F5F4F532 /* Frameworks */,
+				E2D94D6F571DB6FDF86BE9E8DE608B74 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCDCC290138B13CE5CF2D0FB3A0BC83F /* PBXTargetDependency */,
+			);
+			name = "Pods-justTesting";
+			productName = "Pods-justTesting";
+			productReference = E0633CFAA8DD6FC269843999155E9086 /* Pods_justTesting.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CD7CA7613D1AE9B77775DCDC34F87472 /* HotKey */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FECC63E52DE59DDEE1BA272EF4E9A90 /* Build configuration list for PBXNativeTarget "HotKey" */;
+			buildPhases = (
+				EB958C78E9B03E0B2473CF46708413BF /* Sources */,
+				05E6B8CBBA62A425D93EAE9CC9C79F2C /* Frameworks */,
+				E1EC42C7C9D509EDDAEA9E9F3EB60EE0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HotKey;
+			productName = HotKey;
+			productReference = 0BDBE835FEF0FB44C1F4F3466A0C6234 /* HotKey.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 77DAE2CD12D96B5E77BD77987A62C91F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD7CA7613D1AE9B77775DCDC34F87472 /* HotKey */,
+				63663AE86E055B45F23981602C2D8E06 /* Pods-justTesting */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B516688622ABA67F80FD07019491F96A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				368E6EA52A08B9839793D4A9F37627E2 /* Pods-justTesting-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB958C78E9B03E0B2473CF46708413BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FDD26A50E274A822DB8D0E12F973D3E /* HotKey-dummy.m in Sources */,
+				401C3D04D259233BEAB50F753F44EF54 /* HotKey.swift in Sources */,
+				B401867272D84298ED1281CD038DACD2 /* HotKeysController.swift in Sources */,
+				376600012D78BBD1A6A1350E2C0E1763 /* Key.swift in Sources */,
+				4F05668B9EB744A2EA80944CD56D6FD9 /* KeyCombo.swift in Sources */,
+				E0E5B9A249DABC6DC93A498FC5FB12B3 /* NSEventModifierFlags+HotKey.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BCDCC290138B13CE5CF2D0FB3A0BC83F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HotKey;
+			target = CD7CA7613D1AE9B77775DCDC34F87472 /* HotKey */;
+			targetProxy = 4414AD35FDD08B267621E1DB6A08EF0D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C4D8B0A6AD4EF0183B7B90C84630289B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		D45E0AA8A4C56D9C6F995D5A47BB7C48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C477D06E8966A43AD82A480A99C7314 /* HotKey.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/HotKey/HotKey-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HotKey/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/HotKey/HotKey.modulemap";
+				PRODUCT_NAME = HotKey;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D680304EAFD718DF5DCFF75F1BEAB028 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C477D06E8966A43AD82A480A99C7314 /* HotKey.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/HotKey/HotKey-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HotKey/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/HotKey/HotKey.modulemap";
+				PRODUCT_NAME = HotKey;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ED3BC417A9BAAB2DFA8DA863F8CA89C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		F7E4A68312838DF2EBAB28F88B22AA21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82D35B14BF31175A10FEE73A39800C35 /* Pods-justTesting.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-justTesting/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MODULEMAP_FILE = "Target Support Files/Pods-justTesting/Pods-justTesting.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_justTesting;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FB743053D13DDDD55BD933D2C5D8CD65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FB7A447F5FC6474E414CB3231016A14 /* Pods-justTesting.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-justTesting/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MODULEMAP_FILE = "Target Support Files/Pods-justTesting/Pods-justTesting.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_justTesting;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED3BC417A9BAAB2DFA8DA863F8CA89C0 /* Debug */,
+				C4D8B0A6AD4EF0183B7B90C84630289B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FECC63E52DE59DDEE1BA272EF4E9A90 /* Build configuration list for PBXNativeTarget "HotKey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D45E0AA8A4C56D9C6F995D5A47BB7C48 /* Debug */,
+				D680304EAFD718DF5DCFF75F1BEAB028 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		456348DBECB3AE0CB0728D5DD0EA8745 /* Build configuration list for PBXNativeTarget "Pods-justTesting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7E4A68312838DF2EBAB28F88B22AA21 /* Debug */,
+				FB743053D13DDDD55BD933D2C5D8CD65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
