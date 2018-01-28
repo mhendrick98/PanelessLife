@@ -31,7 +31,7 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
     
     
     func createNewContent(name: String, script: String){
-        var script = ""
+        let script = ""
         if contents.count == 0{
             contents.append((name, "IMG_3136", hkScreen1, "HotKey = Command + Option + 1", script))
         }
@@ -128,7 +128,7 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
         }
         if duh >= 4{
             hkScreen4.isPaused = false
-            hkScreen4.keyDownHandler = { print("did 4", duh) }
+            hkScreen4.keyDownHandler = { print("did 4") }
         }
         if duh == 5{
             hkScreen5.isPaused = false
@@ -148,6 +148,7 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
         if row > -1{
             screenNameInfo.stringValue = contents[row].0
             hotKeyText.stringValue = contents[row].3
+            changeSreens(leScript: contents[row].4)
         }
         return true
     }
@@ -191,6 +192,10 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
         }
     }
     
+    
+    func changeSreens(leScript: String){
+        //run the script
+    }
     
     func reformatView(){
         if contents.count >= 1{
