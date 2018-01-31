@@ -45,15 +45,10 @@ class popUpViewController: NSViewController {
     
     
     @IBAction func confirmAdd(_ sender: Any) {
-//        shell("cd")
-//        task.launchPath = "/usr/bin/osascript"
-//        task.arguments = ["osascript ~/Desktop/pane.scpt"]
-//        task.launch()
-//        shell("unset $PYTHONPATH")
-//        shell("/Users/Benjamin/Desktop/")
-//        shell("unset $PYTHONPATH")
-//        print(shell("./besto"))
-//        shell("whoami")
+        
+        
+        
+        
         self.delegate?.popupViewController(viewController: self, didEnterName: self.newScreenName.stringValue, didRecieveImg: self.incomeString)
         }
 }
